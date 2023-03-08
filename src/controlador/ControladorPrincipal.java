@@ -14,7 +14,7 @@ public class ControladorPrincipal implements ActionListener {
 		public ControladorPrincipal (principal principal) {
 			this.ventanaPrincipal = principal;
 			
-			ventanaPrincipal.getBtnGestionarSocios().addActionListener(this);
+			ventanaPrincipal.getBtnGestionarUsuarios().addActionListener(this);
 			ventanaPrincipal.getBtnGestionarActividades().addActionListener(this);
 			ventanaPrincipal.getBtnGestionarInscripciones().addActionListener(this);
 		}
@@ -31,7 +31,7 @@ public class ControladorPrincipal implements ActionListener {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			
-			if(e.getSource() == ventanaPrincipal.getBtnGestionarSocios()) {
+			if(e.getSource() == ventanaPrincipal.getBtnGestionarUsuarios()) {
 				GestorUsuarios gestorUsuario = new GestorUsuarios();
 				
 				ControladorUsuarios cu = new ControladorUsuarios(gestorUsuario);
@@ -54,4 +54,6 @@ public class ControladorPrincipal implements ActionListener {
 		        gi.setVisible(true);
 			}
 		}
+		
+		
 }

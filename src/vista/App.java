@@ -7,8 +7,8 @@ public class App {
 	public static void main(String[] args) {
 		principal principal = new principal();
 		
-		ControladorPrincipal cp = new ControladorPrincipal(principal);
-		cp.inicializar();
+		ControladorPrincipal controladorPrincipal = new ControladorPrincipal(principal);
+		controladorPrincipal.inicializar();
 		
 		principal.setVisible(true);
 	}

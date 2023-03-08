@@ -11,7 +11,7 @@ public class principal extends JFrame {
 
 	private JPanel contentPane;
 	private JButton btnGestionarActividades;
-	private JButton btnGestionarSocios;
+	private JButton btnGestionarUsuarios;
 	private JButton btnGestionarInscripciones;
 
 	/**
@@ -34,17 +34,17 @@ public class principal extends JFrame {
 		btnGestionarActividades.setBounds(172, 147, 169, 53);
 		contentPane.add(btnGestionarActividades);
 		
-		btnGestionarSocios = new JButton("GestionarSocios");
-		btnGestionarSocios.setBounds(172, 42, 169, 53);
-		contentPane.add(btnGestionarSocios);
+		btnGestionarUsuarios = new JButton("GestionarUsuarios");
+		btnGestionarUsuarios.setBounds(172, 42, 169, 53);
+		contentPane.add(btnGestionarUsuarios);
 	}
 
 	public JButton getBtnGestionarActividades() {
 		return btnGestionarActividades;
 	}
 
-	public JButton getBtnGestionarSocios() {
-		return btnGestionarSocios;
+	public JButton getBtnGestionarUsuarios() {
+		return btnGestionarUsuarios;
 	}
 
 	public JButton getBtnGestionarInscripciones() {

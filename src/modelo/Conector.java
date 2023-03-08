@@ -11,7 +11,7 @@ public class Conector {
 
 	/**
 	 */
-	protected Conector() {
+	public void conectar() {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				this.conexion = DriverManager.getConnection("jdbc:mysql://" + Config.HOST + "/" + Config.BBDD, Config.USERNAME, Config.PASSWORD);
@@ -21,6 +21,14 @@ public class Conector {
 				e.printStackTrace();
 			}
 			
+	}
+	
+	public void cerrar() {
+		try {
+			conexion.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public Connection getConexion() {
