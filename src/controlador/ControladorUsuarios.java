@@ -23,6 +23,8 @@ public class ControladorUsuarios implements ActionListener{
 		ventanaGestorUsuario.getBtnInsertar().addActionListener(this);
 		ventanaGestorUsuario.getBtnEliminar().addActionListener(this);
 		ventanaGestorUsuario.getBtnModificar().addActionListener(this);
+		ventanaGestorUsuario.getCancelButton().addActionListener(this);
+		
 	}
 	
 	public void inicializar() {
@@ -60,6 +62,8 @@ public class ControladorUsuarios implements ActionListener{
 			
 			ventanaModificarUsuario.setVisible(true);
 			
+		} else if (e.getSource() == ventanaGestorUsuario.getCancelButton()) {
+			ventanaGestorUsuario.dispose();
 		}
 		
 	}
@@ -107,7 +111,9 @@ public class ControladorUsuarios implements ActionListener{
 					e1.printStackTrace();
 				}
 		        
-		    } 
+		    } if (e.getSource() == ventanaInsertarUsuario.getBtnCancelar()) {
+		    	ventanaInsertarUsuario.dispose();
+		    }
 		    	
 		  }
 	 }
@@ -156,7 +162,9 @@ public class ControladorUsuarios implements ActionListener{
 					e1.printStackTrace();
 				}
 		        
-		    } 
+		    } if (e.getSource() == ventanaModificarUsuario.getBtnCancelar()) {
+		    	ventanaModificarUsuario.dispose();
+		    }
 		    	
 		    }
 		}
@@ -200,7 +208,7 @@ public class ControladorUsuarios implements ActionListener{
 				}
 				 
 			} if (e.getSource() == ventanaEliminarUsuario.getBtnCancelar()) {
-				
+				ventanaEliminarUsuario.dispose();
 			}
 			
 		}
