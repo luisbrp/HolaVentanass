@@ -9,6 +9,7 @@ import vista.GestorInscripciones;
 import vista.principal;
 
 public class ControladorPrincipal implements ActionListener {
+		
 		private principal ventanaPrincipal;
 		
 		public ControladorPrincipal (principal principal) {

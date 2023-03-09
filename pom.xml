@@ -3,10 +3,15 @@
   <groupId>HolaVentanass</groupId>
   <artifactId>HolaVentanass</artifactId>
    <dependencies>
-   <dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>8.0.32</version>
+   	<dependency>
+    	<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    	<version>8.0.32</version>
+	</dependency>
+	<dependency>
+    <groupId>com.jtattoo</groupId>
+    <artifactId>JTattoo</artifactId>
+    <version>1.6.7</version>
 </dependency>
   </dependencies>
   <version>0.0.1-SNAPSHOT</version>

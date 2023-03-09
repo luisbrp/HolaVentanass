@@ -1,18 +1,27 @@
 package vista;
 
+import javax.swing.JOptionPane;
+
 public class Menu {
 	
 	
 		
-		public static void menuDuplicado () {
-			System.out.println("Codigo duplicado");
+		public static void UsuarioCodigo () {
+			JOptionPane.showMessageDialog(null, "Codigo duplicado");
 		}
 		
-		public static void usuarioOk( ) {
-			System.out.println("Usuario registrado");
+		public static void UsuarioEliminado() {
+			JOptionPane.showMessageDialog(null, "Usuario Eliminado");
+		}
+		
+		public static void UsuarioModificado () {
+			JOptionPane.showMessageDialog(null, "Codigo duplicado");
+		}
+		public static void usuarioRegistrado( ) {
+			JOptionPane.showMessageDialog(null, "Usuario Registrado");
 		}
 		
 		public static void actividadOK () {
-			System.out.println("Actividad modificada");
+			JOptionPane.showMessageDialog(null, "Actividad modificada");
 		}
 }
